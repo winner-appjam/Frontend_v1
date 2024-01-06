@@ -22,10 +22,10 @@ export const Title = styled.h1`
 `
 export const FormLayout = styled.div`
   position: absolute;
-  top: 30%;
+  top: 27%;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 25px;
 `
 export const Input = styled.input`
   width: 366px;
