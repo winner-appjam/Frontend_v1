@@ -21,6 +21,8 @@ const SignUp = () => {
       const res = await axios.post("https://port-0-backend-28f9s2blr1wg7it.sel5.cloudtype.app/user", userData)
       if (res.status === 200) {
         console.log("success")
+        // eslint-disable-next-line no-restricted-globals
+        history.push('/signin');
       }
     } catch (err) {
       console.log(err)
