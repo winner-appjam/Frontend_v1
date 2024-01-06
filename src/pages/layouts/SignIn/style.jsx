@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+export const Layout = styled.div``;
 export const title = styled.h1`
   position: absolute;
   top: 10rem;
@@ -46,7 +47,6 @@ export const userInput = styled.input`
   border-radius: 0.75rem;
   border: 1px solid #000;
   background: rgba(255, 255, 255, 0);
-  color: #bbb;
 
   text-align: left;
   font-family: Inknut Antiqua;

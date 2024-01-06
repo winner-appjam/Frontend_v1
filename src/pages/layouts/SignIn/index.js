@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import UserMan from "./image/UMan.svg";
 import * as S from "./style";
 import axios from "axios";
@@ -6,10 +6,22 @@ import axios from "axios";
 const SignIn = () => {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
+  const [user, setUser] = useState({
+    accountId: "",
+    accountPw: "",
+  });
+
+  useEffect(() => {
+    setUser({
+      accountId: id,
+      accountPw: pw,
+    });
+  }, [id, pw]);
+
   const login = (event) => {
     event.preventDefault();
     axios
-      .post(`http://localhost:8080/user/login`)
+      .post(`http://localhost:8080/user/login`, user)
       .then((res) => {
         console.log(res);
       })
@@ -17,8 +29,9 @@ const SignIn = () => {
         console.log(error);
       });
   };
+
   return (
-    <>
+    <S.Layout>
       <S.title>로그인</S.title>
       <S.userImg src={UserMan} />
       <S.form>
@@ -37,7 +50,7 @@ const SignIn = () => {
         <S.login onClick={login}>로그인</S.login>
       </S.form>
       <S.signUp>회원가입</S.signUp>
-    </>
+    </S.Layout>
   );
 };
 
