@@ -17,7 +17,7 @@ const Footer = () => {
           </Link>
         </S.swipBtn>
         <S.swipBtn>
-          <Link to={"/"}>
+          <Link to={"/studyGoal"}>
             <img src={Book} alt="STUDYGOAL"></img>
           </Link>
         </S.swipBtn>
