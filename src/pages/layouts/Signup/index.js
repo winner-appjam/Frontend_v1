@@ -13,7 +13,7 @@ const SignUp = () => {
     "account_id": "",
     "password": "",
     "name": "",
-    "valid_password": ""
+    "validPassword": ""
   })
 
   const onSubmitClick = async () => {
@@ -32,7 +32,7 @@ const SignUp = () => {
       "account_id": id,
       "password": pw,
       "name": nick,
-      "valid_password": checkPw
+      "validPassword": checkPw
     });
   }, [id, pw, nick, checkPw]);
 
