@@ -3,7 +3,7 @@ import * as S from "./style";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <S.footD>
         <S.swipBtn></S.swipBtn>
         <S.swipBtn></S.swipBtn>
@@ -11,7 +11,7 @@ const Footer = () => {
         <S.swipBtn></S.swipBtn>
         <S.swipBtn></S.swipBtn>
       </S.footD>
-    </div>
+    </>
   );
 };
 

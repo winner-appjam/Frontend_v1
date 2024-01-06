@@ -18,7 +18,7 @@ const SignIn = () => {
       });
   };
   return (
-    <div>
+    <>
       <S.title>로그인</S.title>
       <S.userImg src={UserMan} />
       <S.form>
@@ -37,7 +37,7 @@ const SignIn = () => {
         <S.login onClick={login}>로그인</S.login>
       </S.form>
       <S.signUp>회원가입</S.signUp>
-    </div>
+    </>
   );
 };
 
