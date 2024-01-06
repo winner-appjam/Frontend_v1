@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <S.footD>
         <S.swipBtn>
           <Link to={"/signup"}>
@@ -37,7 +37,7 @@ const Footer = () => {
           </Link>
         </S.swipBtn>
       </S.footD>
-    </div>
+    </>
   );
 };
 

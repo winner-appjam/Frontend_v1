@@ -10,7 +10,7 @@ const SignUp = () => {
   const [nick, setNick] = useState("")
 
   const [userData, setUserData] = useState({
-    "account_id": "",
+    "accountId": "",
     "password": "",
     "name": "",
     "validPassword": ""
@@ -18,7 +18,7 @@ const SignUp = () => {
 
   const onSubmitClick = async () => {
     try {
-      const res = await axios.post("https://port-0-java-springboot-28f9s2blr1wg7it.sel5.cloudtype.app/user", userData)
+      const res = await axios.post("https://port-0-backend-28f9s2blr1wg7it.sel5.cloudtype.app/user", userData)
       if (res.status === 200) {
         console.log("success")
       }
@@ -29,7 +29,7 @@ const SignUp = () => {
 
   useEffect(() => {
     setUserData({
-      "account_id": id,
+      "accountId": id,
       "password": pw,
       "name": nick,
       "validPassword": checkPw
