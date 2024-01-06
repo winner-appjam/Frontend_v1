@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import StudyRecord from './layouts/StudyRecord';
 import StudyGoal from "./layouts/StudyGoal";
 import StudyTime from "./layouts/StudyTime";
+import Communication from './layouts/Communication';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Route path="/" element={<StudyRecord />} />
         <Route path="/studyGoal" element={<StudyGoal />} />
         <Route path="/studyTime" element={<StudyTime />} />
+        <Route path="/communication" element={<Communication />} />
       </Routes>
     </BrowserRouter>
   );
