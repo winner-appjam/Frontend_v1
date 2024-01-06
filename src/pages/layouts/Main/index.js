@@ -1,9 +1,9 @@
 import React from "react";
-import * as S from "../Footer/style";
-import Footer from "../Footer/index";
+import Footer from "../Footer";
 const Main = () => {
   return (
     <div>
+      안녕클파
       <Footer />
     </div>
   );

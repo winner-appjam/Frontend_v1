@@ -9,8 +9,10 @@ export const footD = styled.div`
   bottom: 0;
 `;
 
-export const swipBtn = styled.button`
+export const swipBtn = styled.div`
   width: 5.4rem;
   height: 4.6rem;
   border: none;
+  text-align: center;
+  line-height: 6.3rem;
 `;
