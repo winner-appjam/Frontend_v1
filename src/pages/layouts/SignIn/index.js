@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import UserMan from "./image/UMan.svg";
 import * as S from "./style";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const [id, setId] = useState("");
@@ -49,7 +50,9 @@ const SignIn = () => {
         />
         <S.login onClick={login}>로그인</S.login>
       </S.form>
-      <S.signUp>회원가입</S.signUp>
+      <Link to={"/signup"}>
+        <S.signUp>회원가입</S.signUp>
+      </Link>
     </S.Layout>
   );
 };

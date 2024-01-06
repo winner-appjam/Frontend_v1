@@ -22,7 +22,7 @@ const Footer = () => {
           </Link>
         </S.swipBtn>
         <S.swipBtn>
-          <Link to={"/"}>
+          <Link to={"/studyTime"}>
             <img src={Clock} alt="STUDYTIME"></img>
           </Link>
         </S.swipBtn>
